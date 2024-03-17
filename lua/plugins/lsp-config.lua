@@ -11,7 +11,7 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "pyre",
+                    "pyright",
                     "jdtls",
                     "clangd",
                     "marksman",
@@ -24,7 +24,7 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({})
-            lspconfig.pyre.setup({})
+            lspconfig.pyright.setup({})
             lspconfig.jdtls.setup({})
             lspconfig.clangd.setup({})
             lspconfig.marksman.setup({})
