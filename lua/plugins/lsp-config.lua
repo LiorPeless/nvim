@@ -22,12 +22,23 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
+            local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({})
-            lspconfig.pyright.setup({})
-            lspconfig.jdtls.setup({})
-            lspconfig.clangd.setup({})
-            lspconfig.marksman.setup({})
+            lspconfig.lua_ls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.pyright.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.jdtls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.clangd.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.marksman.setup({
+                capabilities = capabilities,
+            })
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
