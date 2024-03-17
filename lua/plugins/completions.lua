@@ -1,7 +1,12 @@
 return {
-    {
-        "hrsh7th/cmp-nvim-lsp",
-    },
+	{
+		"hrsh7th/cmp-nvim-lsp",
+	},
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+        -- In order to set it up, run :Cudeium Auth
+	},
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
