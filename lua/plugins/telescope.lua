@@ -11,6 +11,7 @@ return {
             vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
             vim.keymap.set("n", "<leader>cs", builtin.colorscheme, {})
             vim.keymap.set("n", "<leader>ff", builtin.current_buffer_fuzzy_find, {})
+            vim.keymap.set("n", "<leader>km", builtin.keymaps, {})
         end,
     },
     {
