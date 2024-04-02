@@ -1,6 +1,8 @@
 return {
     "nvimdev/dashboard-nvim",
     event = "VimEnter",
+    -- keymap for dashboard
+    vim.keymap.set("n", "<leader>db", ":Dashboard<CR>", {}),
     config = function()
         require("dashboard").setup({
             -- config
