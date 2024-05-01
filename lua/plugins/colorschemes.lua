@@ -1,8 +1,10 @@
 -- Color schemes:
 
 -- 1 = catppuccin
--- 2 = gruvbox
--- 3 = kanagawa
+-- 2 = dracula
+-- 3 = gruvbox
+-- 4 = kanagawa
+
 
 local selected_scheme = 1
 
@@ -13,6 +15,14 @@ local color_schemes = {
         priority = 1000,
         config = function()
             vim.cmd.colorscheme("catppuccin")
+        end,
+    },
+    {
+        "Mofiqul/dracula.nvim",
+        name = "dracula",
+        priority = 1000,
+        config = function()
+            vim.cmd.colorscheme("dracula")
         end,
     },
     {
